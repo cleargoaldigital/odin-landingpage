@@ -9,12 +9,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 60px;
+  padding: 30px 60px;
   background: #1f2937;
 }
 
-header h2 {
-  font-size: 24px;
+.logo {
+  font-size: 1.8em;
   color: #f9faf8;
 }
 
@@ -26,21 +26,34 @@ ul {
 li {
   list-style: none;
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 1.3em;
   color: #e5e7e8;
 }
+
+/* Hero Section */
 
 .hero-section {
   background: #1f2937;
   display: flex;
   justify-content: space-between;
-  padding: 10px 60px;
 }
 
-.hero-text, .image {
-  height: auto;
-  width: 50%;
+.hero-container{
+  width: 80%;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px auto;
+}
+
+.hero-text {
+  height: auto;
+  width: 60%;
+  margin: auto;
+}
+
+.image-container {
+  width: 40%;
 }
 
 .hero-text {
@@ -48,13 +61,8 @@ li {
   padding: 10px;
 }
 
-.image {
-  text-align: center;
-  background: gray;
-}
-
-.hero-text h2 {
-  font-size: 48px;
+.hero-h2 {
+  font-size: 2.5em;
   font-weight: bolder;
   color: #f9faf8;
 }
@@ -71,22 +79,43 @@ button {
   font-weight: bold;
 }
 
-.section-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px 0px 15px 0px;
-}
+.image-container img{
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}​
 
-.detail-info {
+/* Information section */
+
+.info-section {
   display: flex;
   justify-content: center;
+}
+
+.info-container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.info-text {
+  padding: 15px;
+}
+
+.info-details{
+  display: flex;
+  justify-content: space-between;
   margin: 20px auto;
 }
 
-.detail-info div {
-  height: 100px;
-  width: 80px;
+.details {
+  height: 110px;
+  width: 100px;
   border: 2px solid blue;
   margin-left: 15px;
   border-radius: 5px;
@@ -97,13 +126,17 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
+  /* height: 40vh; */
 }
 
 .pagequote {
   width: 60%;
   text-align: center;
   padding: 50px auto;
+  font-size: 3em;
+  font-weight: lighter;
+  font-style: italic;
+  color: #1f2937;
 }
 
 cite {
@@ -112,10 +145,35 @@ cite {
 
 .section-4 {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
+.call-container{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.call-to-action{
+  width: 100%;
+  background: #3882f6;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
 }
 
 footer {
   background: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  height: 20vh;
+  color: #fff;
 }
