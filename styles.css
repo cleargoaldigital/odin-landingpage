@@ -106,7 +106,7 @@ button {
   padding: 50px auto;
 }
 
-cite{
+cite {
   text-align: right;
 }
 
@@ -114,7 +114,6 @@ cite{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: auto 40px;
 }
 
 footer {
